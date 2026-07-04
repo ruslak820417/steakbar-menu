@@ -3,103 +3,114 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#20241c">
 <title>STEAK BAR — Meniu</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Zilla+Slab:ital,wght@0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#efe9e3; --sheet:#f7f4f1; --card:#ffffff; --ink:#20160f; --sub:#8b7f73;
-    --line:#eadfd5; --wine:#7a1f2b; --wine2:#9c2a38; --gold:#c9a24b;
-    --serif:'Playfair Display',Georgia,serif; --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-    --shadow:0 6px 18px rgba(60,30,20,.08);
+    --paper:#efe7d4; --paper2:#f5efe0; --card:#fbf7ee; --ink:#211d16; --ink2:#3a342a;
+    --sub:#7d7059; --line:#d8ccb2; --green:#3f5238; --green2:#4c6242; --tag:#211d16;
+    --oswald:'Oswald',Impact,sans-serif; --slab:'Zilla Slab',Georgia,serif;
+    --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
   }
   *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
   html{scroll-behavior:smooth}
-  body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.4}
-  .wrap{max-width:480px;margin:0 auto;background:var(--sheet);min-height:100vh;
-    position:relative;box-shadow:0 0 40px rgba(0,0,0,.12);padding-bottom:74px}
-  /* ---------- HERO ---------- */
-  .hero{position:relative;height:220px;overflow:hidden;background:#2a1a12}
-  .hero img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.82) saturate(1.05)}
-  .hero::after{content:"";position:absolute;inset:0;
-    background:linear-gradient(180deg,rgba(20,10,6,.25) 0%,rgba(20,10,6,0) 35%,rgba(20,10,6,.72) 100%)}
-  .hero .cap{position:absolute;left:20px;bottom:16px;z-index:2;color:#fff}
-  .hero .cap .k{font-size:11px;font-weight:700;letter-spacing:.34em;opacity:.9;
-    text-transform:uppercase;text-shadow:0 1px 4px rgba(0,0,0,.5)}
-  .hero .cap .t{font-family:var(--serif);font-weight:800;font-size:40px;line-height:1;
-    margin-top:6px;text-shadow:0 2px 10px rgba(0,0,0,.55)}
+  body{font-family:var(--sans);background:var(--green);color:var(--ink);line-height:1.4}
+  .wrap{max-width:480px;margin:0 auto;background:var(--paper);min-height:100vh;position:relative;
+    box-shadow:0 0 50px rgba(0,0,0,.35);padding-bottom:76px;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.035'/%3E%3C/svg%3E")}
+  /* ---------- HERO (logo pe verde ca placa reala) ---------- */
+  .hero{position:relative;background:
+      radial-gradient(120% 80% at 50% 40%, #55694a, #384a32 75%);
+    padding:20px 16px 16px;text-align:center;border-bottom:3px solid var(--ink)}
+  .hero img{width:100%;max-width:360px;height:auto;display:block;margin:0 auto;
+    filter:drop-shadow(0 6px 14px rgba(0,0,0,.35))}
+  .hero .rib{display:inline-flex;align-items:center;gap:12px;margin-top:12px;
+    font-family:var(--oswald);font-weight:600;font-size:13px;letter-spacing:.4em;
+    color:#f3ecd9;text-transform:uppercase}
+  .hero .rib::before,.hero .rib::after{content:"";width:26px;height:2px;background:#c9b78e}
   /* ---------- SHEET ---------- */
-  .sheet{position:relative;margin-top:-18px;background:var(--sheet);
-    border-radius:20px 20px 0 0;padding-top:14px;z-index:3}
-  .toggle{display:flex;align-items:center;justify-content:center;gap:12px;
-    margin:6px 16px 12px;font-size:14px;font-weight:600;color:var(--sub)}
-  .toggle .on{color:var(--ink)}
-  .sw{width:44px;height:25px;border-radius:99px;background:var(--wine);position:relative;
-    box-shadow:inset 0 1px 3px rgba(0,0,0,.2)}
-  .sw::after{content:"";position:absolute;top:3px;left:3px;width:19px;height:19px;border-radius:50%;
-    background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.3);transition:.2s}
+  .sheet{position:relative;background:var(--paper);padding-top:12px}
+  .toggle{display:flex;align-items:center;justify-content:center;gap:12px;margin:8px 16px 12px;
+    font-family:var(--oswald);text-transform:uppercase;letter-spacing:.08em;
+    font-size:13px;font-weight:500;color:var(--sub)}
+  .toggle .on{color:var(--ink);font-weight:600}
+  .sw{width:44px;height:24px;border-radius:99px;background:var(--green2);position:relative;
+    box-shadow:inset 0 1px 3px rgba(0,0,0,.3)}
+  .sw::after{content:"";position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;
+    background:var(--paper2);box-shadow:0 1px 2px rgba(0,0,0,.35)}
   /* tabs */
-  .tabs{position:sticky;top:0;z-index:12;display:flex;background:var(--sheet);
-    border-bottom:1px solid var(--line)}
-  .tabs button{flex:1;background:none;border:none;font-family:var(--sans);cursor:pointer;
-    font-size:15px;font-weight:600;color:var(--sub);padding:13px 0 12px;position:relative}
-  .tabs button.act{color:var(--ink)}
-  .tabs button.act::after{content:"";position:absolute;left:50%;transform:translateX(-50%);
-    bottom:-1px;width:64%;height:3px;border-radius:3px 3px 0 0;background:var(--wine)}
+  .tabs{position:sticky;top:0;z-index:12;display:flex;background:var(--paper);
+    border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+  .tabs button{flex:1;background:none;border:none;cursor:pointer;font-family:var(--oswald);
+    font-size:16px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;
+    color:var(--sub);padding:12px 0;position:relative}
+  .tabs button+button{border-left:2px solid var(--ink)}
+  .tabs button.act{color:var(--paper2);background:var(--ink)}
   /* pills */
-  .pills{position:sticky;top:46px;z-index:11;display:flex;gap:8px;overflow-x:auto;
-    padding:12px 16px;background:var(--sheet);scrollbar-width:none}
+  .pills{position:sticky;top:45px;z-index:11;display:flex;gap:8px;overflow-x:auto;
+    padding:12px 16px;background:var(--paper);scrollbar-width:none;border-bottom:1px solid var(--line)}
   .pills::-webkit-scrollbar{display:none}
-  .pills button{flex:0 0 auto;border:none;cursor:pointer;font-family:var(--sans);
-    font-size:13px;font-weight:600;color:var(--ink);background:#ece3da;
-    padding:9px 15px;border-radius:99px;white-space:nowrap;transition:.2s}
-  .pills button.act{background:var(--wine);color:#fff;box-shadow:0 3px 10px rgba(122,31,43,.28)}
+  .pills button{flex:0 0 auto;border:1.5px solid var(--ink);cursor:pointer;font-family:var(--oswald);
+    font-size:12.5px;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:var(--ink);
+    background:transparent;padding:8px 14px;border-radius:2px;white-space:nowrap;transition:.15s}
+  .pills button.act{background:var(--ink);color:var(--paper2)}
   /* ---------- CONTENT ---------- */
-  #content{padding:6px 14px 20px}
-  section{padding-top:20px;scroll-margin-top:96px}
-  .sh{font-family:var(--serif);font-weight:800;font-size:22px;margin:0 4px 12px;color:var(--ink)}
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-  .card{background:var(--card);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);
-    display:flex;flex-direction:column;animation:fade .5s ease both}
-  .ph{position:relative;height:120px;background:linear-gradient(140deg,#f0e7dd,#e6d8ca)}
+  #content{padding:4px 14px 20px}
+  section{padding-top:22px;scroll-margin-top:96px}
+  .sh{display:flex;align-items:center;gap:12px;margin:0 2px 14px}
+  .sh h2{font-family:var(--slab);font-weight:700;font-size:23px;text-transform:uppercase;
+    letter-spacing:.01em;color:var(--ink);white-space:nowrap}
+  .sh .ln{flex:1;height:2px;background:var(--ink);opacity:.85}
+  .sh .ic{font-size:19px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+  .card{background:var(--card);border:2px solid var(--ink);border-radius:3px;overflow:hidden;
+    display:flex;flex-direction:column;box-shadow:3px 3px 0 rgba(33,29,22,.14);
+    animation:fade .45s ease both}
+  .ph{position:relative;height:116px;background:repeating-linear-gradient(45deg,#e7ddc6,#e7ddc6 8px,#e2d8bf 8px,#e2d8bf 16px);
+    border-bottom:2px solid var(--ink)}
   .ph img{width:100%;height:100%;object-fit:cover;display:block}
   .ph .mono{width:100%;height:100%;display:flex;align-items:center;justify-content:center;
-    font-family:var(--serif);font-weight:800;font-size:34px;color:#c9b59d}
-  .badge{position:absolute;right:8px;bottom:8px;background:rgba(23,14,9,.82);color:#fff;
-    font-size:13px;font-weight:700;padding:5px 10px;border-radius:10px;backdrop-filter:blur(3px);
-    box-shadow:0 2px 8px rgba(0,0,0,.25)}
-  .badge .u{font-size:9px;font-weight:600;opacity:.8;margin-left:2px}
-  .ci{padding:10px 11px 13px}
-  .cn{font-size:13.5px;font-weight:600;line-height:1.25;color:var(--ink)}
-  .cd{font-size:11.5px;color:var(--sub);margin-top:4px;line-height:1.35}
-  .cx{font-size:11px;color:var(--wine2);font-weight:600;margin-top:5px}
+    font-family:var(--slab);font-weight:700;font-size:34px;color:#b9a882}
+  .tagp{position:absolute;right:-1px;bottom:8px;background:var(--tag);color:var(--paper2);
+    font-family:var(--oswald);font-weight:600;font-size:14px;letter-spacing:.03em;
+    padding:4px 10px 4px 12px;border-radius:2px 0 0 2px;box-shadow:-2px 2px 0 rgba(0,0,0,.18)}
+  .tagp .u{font-size:9px;font-weight:500;opacity:.85;margin-left:2px}
+  .ci{padding:9px 10px 12px}
+  .cn{font-family:var(--oswald);font-weight:500;font-size:14px;text-transform:uppercase;
+    letter-spacing:.02em;line-height:1.2;color:var(--ink)}
+  .cd{font-family:var(--slab);font-style:italic;font-weight:500;font-size:12px;color:var(--sub);
+    margin-top:5px;line-height:1.3}
+  .cx{font-family:var(--oswald);font-size:11px;font-weight:500;text-transform:uppercase;
+    letter-spacing:.04em;color:var(--green2);margin-top:6px}
   /* ---------- BOTTOM BAR ---------- */
   .bar{position:fixed;left:0;right:0;bottom:0;z-index:40;max-width:480px;margin:0 auto;
-    display:flex;align-items:center;justify-content:space-around;
-    background:#fff;border-top:1px solid var(--line);padding:9px 10px 12px;
-    box-shadow:0 -4px 16px rgba(0,0,0,.06)}
-  .bar button{background:none;border:none;cursor:pointer;font-family:var(--sans);
-    display:flex;flex-direction:column;align-items:center;gap:2px;color:var(--sub);
-    font-size:10px;font-weight:600}
-  .bar button .ic{font-size:20px;line-height:1}
-  .bar .flag .ic{font-size:19px}
-  .loading{text-align:center;color:var(--sub);padding:70px 20px}
+    display:flex;align-items:center;justify-content:space-around;background:var(--ink);
+    padding:9px 10px 12px;border-top:3px solid var(--green2)}
+  .bar button{background:none;border:none;cursor:pointer;font-family:var(--oswald);
+    text-transform:uppercase;letter-spacing:.08em;display:flex;flex-direction:column;
+    align-items:center;gap:2px;color:#c8bda1;font-size:10px;font-weight:500}
+  .bar button .ic{font-size:19px;line-height:1}
+  .foot{text-align:center;font-family:var(--oswald);text-transform:uppercase;letter-spacing:.34em;
+    font-size:11px;color:var(--sub);padding:20px 16px 6px}
+  .loading{text-align:center;color:var(--sub);padding:70px 20px;font-family:var(--slab);font-style:italic}
   @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
 </style>
 </head>
 <body>
 <div class="wrap">
   <div class="hero">
-    <img src="images/hero.jpg" alt="STEAK BAR" onerror="this.style.display='none'">
-    <div class="cap"><div class="k">Bar · Berărie · Pizza</div><div class="t">Meniu</div></div>
+    <img src="images/brand.jpg" alt="STEAK BAR — Beer & Grill · Good Food">
+    <div class="rib">Meniu</div>
   </div>
   <div class="sheet">
     <div class="toggle"><span class="on">În Restaurant</span><span class="sw"></span><span>Livrare</span></div>
     <div class="tabs" id="tabs"></div>
     <div class="pills" id="pills"></div>
     <div id="content"><div class="loading">Se încarcă meniul…</div></div>
+    <div class="foot">Beer &amp; Grill · Good Food</div>
   </div>
 </div>
 <div class="bar">
@@ -114,9 +125,7 @@ const GROUPS = [
   { key:'drinks', label:'Băuturi', cats:['bere-halba','bere-sticla','cvas','racoritoare','sucuri','energizante'] },
 ];
 const initial = n => (n.replace(/^[^A-Za-zĂÂÎȘȚ]+/,'')[0]||'•').toUpperCase();
-
-function badge(p){ return p==null ? '' :
-  `<div class="badge">${p}<span class="u">lei</span></div>`; }
+const tag = p => p==null ? '' : `<div class="tagp">${p}<span class="u">lei</span></div>`;
 
 function card(it, man){
   const img = man[it.id];
@@ -127,7 +136,7 @@ function card(it, man){
   const desc = it.desc ? `<div class="cd">${it.desc}</div>` : '';
   const noprice = it.price==null ? `<div class="cx">Preț la comandă</div>` : '';
   return `<div class="card">
-    <div class="ph">${media}${badge(it.price)}</div>
+    <div class="ph">${media}${tag(it.price)}</div>
     <div class="ci"><div class="cn">${it.name}</div>${desc}${noprice}</div>
   </div>`;
 }
@@ -135,20 +144,15 @@ function card(it, man){
 let MENU=null, MAN={}, active='food', io=null;
 
 function renderTab(){
-  const g = GROUPS.find(x=>x.key===active);
-  const cats = g.cats.map(id=>MENU.categories.find(c=>c.id===id)).filter(c=>c&&c.items.length);
+  const g=GROUPS.find(x=>x.key===active);
+  const cats=g.cats.map(id=>MENU.categories.find(c=>c.id===id)).filter(c=>c&&c.items.length);
   const pills=document.getElementById('pills'), content=document.getElementById('content');
-  pills.innerHTML = cats.map(c=>`<button data-id="${c.id}">${c.icon} ${c.name}</button>`).join('');
-  content.innerHTML = cats.map(c=>`<section id="sec-${c.id}">
-    <div class="sh">${c.name}</div>
-    <div class="grid">${c.items.map(it=>card(it,MAN)).join('')}</div>
-  </section>`).join('');
-  // pill click -> scroll
-  pills.querySelectorAll('button').forEach(b=>b.onclick=()=>{
-    document.getElementById('sec-'+b.dataset.id)
-      .scrollIntoView({behavior:'smooth',block:'start'});
-  });
-  // scrollspy
+  pills.innerHTML=cats.map(c=>`<button data-id="${c.id}">${c.name}</button>`).join('');
+  content.innerHTML=cats.map(c=>`<section id="sec-${c.id}">
+    <div class="sh"><span class="ic">${c.icon}</span><h2>${c.name}</h2><span class="ln"></span></div>
+    <div class="grid">${c.items.map(it=>card(it,MAN)).join('')}</div></section>`).join('');
+  pills.querySelectorAll('button').forEach(b=>b.onclick=()=>
+    document.getElementById('sec-'+b.dataset.id).scrollIntoView({behavior:'smooth',block:'start'}));
   if(io) io.disconnect();
   io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){
     const id=e.target.id.replace('sec-','');
@@ -156,33 +160,24 @@ function renderTab(){
     const a=pills.querySelector('button.act'); if(a) a.scrollIntoView({inline:'center',block:'nearest',behavior:'smooth'});
   }});},{rootMargin:'-52% 0px -46% 0px'});
   cats.forEach(c=>io.observe(document.getElementById('sec-'+c.id)));
-  const first=pills.querySelector('button'); if(first) first.classList.add('act');
+  const f=pills.querySelector('button'); if(f) f.classList.add('act');
   window.scrollTo({top:0});
 }
-
 function renderTabs(){
   const tabs=document.getElementById('tabs');
   tabs.innerHTML=GROUPS.map(g=>`<button data-k="${g.key}" class="${g.key===active?'act':''}">${g.label}</button>`).join('');
-  tabs.querySelectorAll('button').forEach(b=>b.onclick=()=>{
-    active=b.dataset.k;
-    tabs.querySelectorAll('button').forEach(x=>x.classList.toggle('act',x.dataset.k===active));
-    renderTab();
-  });
+  tabs.querySelectorAll('button').forEach(b=>b.onclick=()=>{active=b.dataset.k;
+    tabs.querySelectorAll('button').forEach(x=>x.classList.toggle('act',x.dataset.k===active));renderTab();});
 }
-
 Promise.all([
   fetch('menu.json').then(r=>r.json()),
   fetch('images/manifest.json').then(r=>r.json()).catch(()=>({}))
-]).then(([menu,man])=>{ MENU=menu; MAN=man; renderTabs(); renderTab(); })
+]).then(([menu,man])=>{MENU=menu;MAN=man;renderTabs();renderTab();})
 .catch(()=>{document.getElementById('content').innerHTML='<div class="loading">Eroare la încărcare.</div>';});
-
 document.getElementById('topBtn').onclick=()=>window.scrollTo({top:0,behavior:'smooth'});
-document.getElementById('shareBtn').onclick=async()=>{
-  const data={title:'STEAK BAR — Meniu',url:location.href};
-  try{ if(navigator.share) await navigator.share(data);
-    else { await navigator.clipboard.writeText(location.href); alert('Link copiat!'); } }
-  catch(e){}
-};
+document.getElementById('shareBtn').onclick=async()=>{try{
+  if(navigator.share) await navigator.share({title:'STEAK BAR — Meniu',url:location.href});
+  else{await navigator.clipboard.writeText(location.href);alert('Link copiat!');}}catch(e){}};
 </script>
 </body>
 </html>
