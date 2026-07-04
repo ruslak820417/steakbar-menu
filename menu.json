@@ -1,0 +1,181 @@
+{
+  "restaurant": "STEAK BAR",
+  "currency": "MDL",
+  "updated": "2026-07-04",
+  "categories": [
+    {
+      "id": "bere-halba",
+      "name": "Bere la halbă",
+      "icon": "🍺",
+      "items": [
+        { "id": 1, "name": "Hopfens PILS 0.5L", "price": 25, "q": "Hopfens Pils beer" },
+        { "id": 2, "name": "Hopfens AGA 0.5L", "price": 30, "q": "Hopfens beer" },
+        { "id": 3, "name": "Efes Pilsener 0.5L", "price": 30, "q": "Efes Pilsener beer bottle" },
+        { "id": 4, "name": "Kozel Ciornîi 0.5L", "price": 30, "q": "Velkopopovicky Kozel cerny dark beer" },
+        { "id": 5, "name": "Kozel Svetlîi 0.5L", "price": 30, "q": "Velkopopovicky Kozel svetle beer" }
+      ]
+    },
+    {
+      "id": "bere-sticla",
+      "name": "Bere la sticlă",
+      "icon": "🍻",
+      "items": [
+        { "id": 6, "name": "Timișoreana 0.5L", "price": 28, "q": "Timisoreana beer bottle" },
+        { "id": 7, "name": "Kozel Svetlîi 0.5L", "price": 30, "q": "Velkopopovicky Kozel svetle bottle" },
+        { "id": 8, "name": "Kozel fără alcool 0.5L", "price": 30, "q": "Kozel non alcoholic beer" },
+        { "id": 9, "name": "Efes fără alcool 0.5L", "price": 30, "q": "Efes non alcoholic beer" },
+        { "id": 10, "name": "Radler Zero 0.45L", "price": 30, "q": "Radler zero beer" },
+        { "id": 11, "name": "Radler Jigolo 0.45L", "price": 30, "q": "Radler beer" },
+        { "id": 12, "name": "Radler Lemon 0.45L", "price": 30, "q": "Radler Lemon beer" },
+        { "id": 13, "name": "Radler Cherry 0.33L", "price": 30, "q": "Radler Cherry beer" },
+        { "id": 14, "name": "Fest Cosmo 0.33L", "price": 28, "q": "Fest beer cosmo" },
+        { "id": 15, "name": "Fest Pink Grapefruit 0.33L", "price": null, "q": "Fest beer grapefruit" },
+        { "id": 16, "name": "Fest Club Mix 0.33L", "price": 28, "q": "Fest beer club mix" },
+        { "id": 17, "name": "Melnik Mladkoe 0.5L", "price": 25, "q": "Melnik beer" },
+        { "id": 18, "name": "Cernîi Svet 0.5L", "price": 30, "q": "dark beer bottle" }
+      ]
+    },
+    {
+      "id": "cvas",
+      "name": "Cvas",
+      "icon": "🥤",
+      "items": [
+        { "id": 21, "name": "Kvass Kvassica 0.5L", "price": 20, "q": "kvass drink bottle" }
+      ]
+    },
+    {
+      "id": "racoritoare",
+      "name": "Băuturi răcoritoare",
+      "icon": "🧊",
+      "items": [
+        { "id": 22, "name": "Coca-Cola 0.33L doză", "price": 20, "q": "Coca-Cola can 330ml" },
+        { "id": 23, "name": "Coca-Cola 0.5L doză", "price": 25, "q": "Coca-Cola can 500ml" },
+        { "id": 24, "name": "Coca-Cola Zero 0.5L", "price": 25, "q": "Coca-Cola Zero can" },
+        { "id": 26, "name": "Fanta Orange 0.33L doză", "price": null, "q": "Fanta Orange can 330ml" },
+        { "id": 27, "name": "Fanta Orange 0.5L doză", "price": null, "q": "Fanta Orange can 500ml" },
+        { "id": 28, "name": "Sprite 0.33L doză", "price": 20, "q": "Sprite can 330ml" },
+        { "id": 29, "name": "Sprite 0.5L", "price": 25, "q": "Sprite can 500ml" },
+        { "id": 30, "name": "Schweppes Pomegranate 0.33L", "price": 25, "q": "Schweppes pomegranate" },
+        { "id": 31, "name": "Schweppes Mojito 0.33L", "price": 25, "q": "Schweppes mojito" },
+        { "id": 32, "name": "Fuze Tea Căpșuni-Pepene 0.5L", "price": 25, "q": "Fuze Tea strawberry watermelon" },
+        { "id": 33, "name": "Fuze Tea Lămâie-Mentă 0.5L", "price": 25, "q": "Fuze Tea lemon mint" },
+        { "id": 34, "name": "Apă minerală Izvor Alb 0.5L", "price": 20, "q": "Izvorul Alb mineral water" },
+        { "id": 35, "name": "Apă minerală Dorna 0.5L", "price": 20, "q": "Dorna mineral water" },
+        { "id": 39, "name": "Apă Căinărului 0.5L", "price": 15, "q": "mineral water bottle" }
+      ]
+    },
+    {
+      "id": "sucuri",
+      "name": "Sucuri, Ice Tea & Nectare",
+      "icon": "🧃",
+      "items": [
+        { "id": 40, "name": "Ice Tea Lămâie 0.5L", "price": null, "q": "iced tea lemon bottle" },
+        { "id": 41, "name": "Ice Tea Piersic 0.5L", "price": null, "q": "iced tea peach bottle" },
+        { "id": 42, "name": "Ice Tea Soursop 0.5L", "price": null, "q": "iced tea bottle" },
+        { "id": 43, "name": "Ice Tea Zmeură 0.5L", "price": null, "q": "iced tea raspberry bottle" },
+        { "id": 44, "name": "Letto MultiFruct 0.5L", "price": null, "q": "Letto juice multifruit" },
+        { "id": 45, "name": "Letto Quinoa-Pară 0.5L", "price": null, "q": "Letto juice pear" },
+        { "id": 46, "name": "Letto Crazy Lemon 0.25L", "price": null, "q": "Letto lemon drink" },
+        { "id": 47, "name": "Letto Quinoa-Pară 0.25L", "price": null, "q": "Letto pear juice" },
+        { "id": 48, "name": "Letto Sunny Orange 0.25L", "price": null, "q": "Letto orange juice" },
+        { "id": 49, "name": "Darnik Nectar Mere-Struguri 0.4L", "price": null, "q": "apple grape nectar juice" },
+        { "id": 50, "name": "Darnik Nectar Multifruct 0.4L", "price": null, "q": "multifruit nectar juice" }
+      ]
+    },
+    {
+      "id": "energizante",
+      "name": "Energizante",
+      "icon": "⚡",
+      "items": [
+        { "id": 51, "name": "Burn Original 0.33L doză", "price": null, "q": "Burn energy drink can" },
+        { "id": 52, "name": "Burn Apple Kiwi 0.25L doză", "price": null, "q": "Burn energy drink apple kiwi" }
+      ]
+    },
+    {
+      "id": "chips",
+      "name": "Chipsuri & Arahide",
+      "icon": "🥔",
+      "items": [
+        { "id": 53, "name": "Chipsuri Flint 100g (asortate)", "price": null, "q": "Flint chips" },
+        { "id": 54, "name": "Chipsuri Flint 148g", "price": null, "q": "Flint chips" },
+        { "id": 55, "name": "Arahide BIG BOB 45g Scaval", "price": null, "q": "peanuts snack" },
+        { "id": 56, "name": "Arahide BIG BOB 45g Chilli Dulce", "price": null, "q": "chilli peanuts snack" },
+        { "id": 57, "name": "Arahide BIG BOB 55g Wasabi", "price": null, "q": "wasabi peanuts snack" },
+        { "id": 58, "name": "Arahide BIG BOB 45g Vită+Adjika", "price": null, "q": "peanuts snack beef" },
+        { "id": 59, "name": "Arahide BIG BOB 60g Bocconi", "price": null, "q": "peanuts snack" },
+        { "id": 60, "name": "Arahide BIG BOB 60g Crab", "price": null, "q": "crab peanuts snack" },
+        { "id": 61, "name": "Arahide BIG BOB 60g Verdeață", "price": null, "q": "peanuts snack herbs" },
+        { "id": 62, "name": "Arahide BIG BOB 90g Diic", "price": null, "q": "peanuts snack" },
+        { "id": 63, "name": "Cips-pelet Biociovogo 50g Bacon", "price": null, "q": "bacon snack pellets" },
+        { "id": 64, "name": "Cips-pelet Biociovogo 50g Cașcaval", "price": null, "q": "cheese snack pellets" },
+        { "id": 65, "name": "Cips Plastine 50g Ceapă", "price": null, "q": "onion chips snack" },
+        { "id": 66, "name": "Cips Plastine 50g Cașcaval", "price": null, "q": "cheese chips snack" },
+        { "id": 67, "name": "Cips Plastine 50g Mentă", "price": null, "q": "chips snack" }
+      ]
+    },
+    {
+      "id": "pesmeti",
+      "name": "Pesmeți & Toasturi",
+      "icon": "🍘",
+      "items": [
+        { "id": 68, "name": "Pesmeți Flint 100g Cașcaval", "price": null, "q": "Flint croutons cheese" },
+        { "id": 69, "name": "Pesmeți Flint 100g Crab", "price": null, "q": "Flint croutons crab" },
+        { "id": 70, "name": "Pesmeți Flint 100g Usturoi", "price": null, "q": "Flint croutons garlic" },
+        { "id": 71, "name": "Pesmeți Flint 100g Roșii", "price": null, "q": "Flint croutons tomato" },
+        { "id": 72, "name": "Pesmeți Flint 100g Salam", "price": null, "q": "Flint croutons salami" },
+        { "id": 73, "name": "Pesmeți Flint 100g Hrean", "price": null, "q": "Flint croutons horseradish" },
+        { "id": 74, "name": "Pesmeți Flint 100g Mentă-Verdeață", "price": null, "q": "Flint croutons herbs" },
+        { "id": 75, "name": "Toast Flint Craft 90g Cabanos Muștar", "price": null, "q": "Flint toast mustard" },
+        { "id": 76, "name": "Toast Flint Craft 90g Carne Sacadată", "price": null, "q": "Flint toast jerky" },
+        { "id": 77, "name": "Toast Flint Craft 90g Tabasco", "price": null, "q": "Flint toast tabasco" },
+        { "id": 78, "name": "Toast Flint Craft 90g Slănină-Hrean", "price": null, "q": "Flint toast bacon" }
+      ]
+    },
+    {
+      "id": "popcorn",
+      "name": "Popcorn",
+      "icon": "🍿",
+      "items": [
+        { "id": 80, "name": "Popcorn Flint 75g Caramel Sărat", "price": null, "q": "Flint popcorn salted caramel" }
+      ]
+    },
+    {
+      "id": "peste",
+      "name": "Pește uscat & Fructe de mare",
+      "icon": "🐟",
+      "items": [
+        { "id": 81, "name": "Merlan uscat-sărat Moskvie 45g", "price": null, "q": "dried salted fish snack" },
+        { "id": 83, "name": "Stavridă uscată Moskvie", "price": null, "q": "dried fish snack" },
+        { "id": 85, "name": "Stavrid galben dungat uscat-sărat (100g)", "price": null, "q": "dried fish snack" },
+        { "id": 86, "name": "Calamar dungat uscat-sărat (100g)", "price": null, "q": "dried squid snack" },
+        { "id": 87, "name": "Calamar pai uscat-sărat (100g)", "price": null, "q": "dried squid strips snack" }
+      ]
+    },
+    {
+      "id": "pizza",
+      "name": "Pizza",
+      "icon": "🍕",
+      "items": [
+        { "id": 101, "name": "Margherita", "desc": "Sos de roșii, mozzarella, roșii, oregano", "price": 100, "q": "margherita pizza" },
+        { "id": 102, "name": "Salami", "desc": "Sos de roșii, mozzarella, salami, oregano", "price": 110, "q": "salami pizza" },
+        { "id": 103, "name": "Chicken", "desc": "Sos de roșii, mozzarella, piept de pui, ciuperci, oregano", "price": 110, "q": "chicken mushroom pizza" },
+        { "id": 104, "name": "Corona", "desc": "Sos de roșii, mozzarella, șuncă, cârnăciori, măsline, oregano", "price": 110, "q": "ham olives pizza" },
+        { "id": 105, "name": "Bianca", "desc": "Sos de roșii, mozzarella, ciuperci, roșii, oregano", "price": 110, "q": "mushroom pizza" },
+        { "id": 106, "name": "Capricio", "desc": "Sos de roșii, mozzarella, salami, piept de pui, porumb, roșii, oregano", "price": 110, "q": "capricciosa pizza" },
+        { "id": 107, "name": "Polo", "desc": "Sos de roșii, mozzarella, șuncă, ardei dulce, ardei iute, porumb, ciuperci, oregano", "price": 110, "q": "vegetable ham pizza" },
+        { "id": 108, "name": "Quattro Formaggio", "desc": "Sos de roșii, mozzarella, parmezan, cașcaval afumat, brânză, oregano", "price": 120, "q": "quattro formaggi cheese pizza" }
+      ]
+    },
+    {
+      "id": "garnituri",
+      "name": "Garnituri",
+      "icon": "🍟",
+      "items": [
+        { "id": 121, "name": "Cartofi Pai 210g", "price": 30, "q": "french fries" },
+        { "id": 122, "name": "Cartofi Veges 210g", "price": 30, "q": "potato wedges" },
+        { "id": 123, "name": "Cartofi Bile 210g", "price": 30, "q": "potato balls croquettes" },
+        { "id": 124, "name": "Adaos Sos", "price": 5, "q": "dip sauce" }
+      ]
+    }
+  ]
+}
